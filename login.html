@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8">
+	<title>登录</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<link rel="stylesheet" type="text/css" href="style/layout.css" />
+	<link rel="stylesheet" type="text/css" href="style/mobile.css" />
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/trigger.js"></script>
+</head> 
+
+<body id="log_page">
+	<div id="log_box">
+		<div class="error" id="error">
+			<h3>用户名错误</h3>
+		</div>
+		<div id="login">
+			<h1>登录系统</h1>
+			<form method="post" id="login_form" action="#">
+				<div class="field">
+					<label for="email">用户名:</label>
+					<input type="text" value="" class="input email_field" name="email" id="email">
+				</div>
+	
+				<div class="field">
+					<label for="passwd">密码:</label>
+					<input type="password" value="" class="input password_field" name="passwd" id="passwd">
+				</div>
+	
+				<div class="field">
+					<input type="submit" class="button fl margin-right-5" value="登录" name="submitLogin">
+	
+					<p class="fl no-margin no ajax-loader">
+						<img alt="" src="images/loader.gif">
+					</p>
+	
+					<p class="fr no-margin">
+						<a class="show-forgot-password" href="#">忘记密码?</a>
+					</p>
+					<div class="cl"></div>
+				</div>
+				<input type="hidden" value="index.php?controller=&amp;token=56f074d83257e95a25ed6d6cad41678e" id="redirect" name="redirect">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
